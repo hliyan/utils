@@ -1,4 +1,4 @@
-import {is, check} from '../src/is';
+import {is, check} from '../';
 
 const isString = {type: 'string'};
 const isNumber = {type: 'number'};

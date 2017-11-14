@@ -1,4 +1,4 @@
-import Client from '../src/client';
+import {Client} from '../';
 
 class MyClient extends Client {
 }
