@@ -28,6 +28,10 @@ export const is = (value, rules) => {
   return Object.keys(errors).length === 0 ? null : errors;
 };
 
+/**
+ * Similar to is() in validations, but throws an Error with a ready-made message
+ * USAGE: const error = check({'theFieldName': 6.5}, { type: 'integer', range: [1, 5] });
+ */
 export const check = (nameValue, rules) => {
   const name = Object.keys(nameValue)[0];
   const value = nameValue[name];
